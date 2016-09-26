@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.parkingservice.web</groupId>
+    <artifactId>parkingweb</artifactId>
+    <packaging>war</packaging>
+
+    <parent>
+        <groupId>com.arvatotest</groupId>
+        <artifactId>arvatotest</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.parkingservice.service</groupId>
+            <artifactId>parkingservice</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+
+        </dependency>
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+         <artifactId>json-simple</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+
+        </dependency>
+
+    </dependencies>
+    <properties>
+        <classes.dir.prefix>${basedir}/target</classes.dir.prefix>
+    </properties>
+      <build>
+          <testSourceDirectory>${basedir}/src/main/test/java</testSourceDirectory>
+          <testOutputDirectory>${classes.dir.prefix}/test-classes</testOutputDirectory>
+          <testResources>
+              <testResource>
+                  <filtering>false</filtering>
+                  <directory>${basedir}/src/main/test/resources</directory>
+              </testResource>
+          </testResources>
+          <finalName>ROOT</finalName>
+     </build>
+
+</project>

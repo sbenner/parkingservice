@@ -1,0 +1,37 @@
+[
+    {
+        "clientId": 2,
+        "entryDate": "2016-08-02 08:33:00",
+        "departureDate": "2016-08-02 11:45:00",
+        "parkingHouseId":1
+    },
+
+    {
+        "clientId": 2,
+        "entryDate": "2016-08-02 19:55:00",
+        "departureDate": "2016-08-03 05:33:00",
+        "parkingHouseId":1
+    },
+    {
+        "clientId": 2,
+        "entryDate": "2016-08-05 08:33:00",
+        "departureDate": "2016-08-05 20:11:01",
+        "parkingHouseId":1
+    },
+
+
+    {
+        "clientId": 3,
+        "entryDate": "2016-08-05 11:55:00",
+        "departureDate": "2016-08-05 15:12:00",
+        "parkingHouseId":1
+    },
+
+    {
+        "clientId": 3,
+        "entryDate": "2016-08-05 20:22:00",
+        "departureDate": "2016-08-05 23:44:00",
+        "parkingHouseId":1
+    }
+
+]
